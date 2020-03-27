@@ -23,8 +23,8 @@ def qw_init_box(qw):
     desc_w     = 'w = Width of quantum well (nm)'
     desc_E_w   = 'E_w = Lowest energy level of a quantum well (eV)'
     desc_E_b   = 'E_b = Energy level of barrier material (eV)'
-    desc_Me_w  = 'Me_w = (Electron mass inside quantum well) / (Free electron mass)'
-    desc_Me_b  = 'Me_b = (Electron mass inside barrier layer) / (Free electron mass)'
+    desc_Me_w  = 'Me_w = Effective electron mass in quantum well'
+    desc_Me_b  = 'Me_b = Effective electron mass in barrier'
     desc_n     = 'n = Number of finite elements to break calculation into, per 1 QW width (larger n -> longer run time, default is 100)'
     desc_bound = 'bound = Thickness of barrier material to pad when perform calculation, in a QW width unit (larger bound -> longer run time, default is 6)'
     
