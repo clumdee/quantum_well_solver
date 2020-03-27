@@ -11,3 +11,4 @@ Click the binder badge below to launch an interactive demo notebook. A user can 
 
 # Reference
 The core of the code came from this class project [note](https://clumdee.github.io/talks/talks-pdf/2010-05-XX_ClassProject_NumerModelRectQD.pdf).
+Please find this [paper](https://github.com/clumdee/quantum_well_solver/blob/master/1990_JAP_Schrodinger-Poisson.pdf) for more details.
