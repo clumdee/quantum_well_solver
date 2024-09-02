@@ -3,6 +3,10 @@ The solver searches for solutions of 1-D Schrödinger equation.
 The calculation is based on [*finite difference method*](https://en.wikipedia.org/wiki/Finite_difference_method).
 
 
+# Binder stopped working
+The demo can no longer start (found in September 2024). Will look for another tool to serve and update the code accordingly.
+
+
 # Interactive Demo
 Click the binder badge below to launch an interactive demo notebook. A user can provide information of a quantum well and solve for available energy states and wavefunctions.
 
