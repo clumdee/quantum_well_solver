@@ -34,13 +34,17 @@ def qw_init_box(qw):
     qw_init = interactive(
         qw.e_solver,
         {"manual": True, "manual_name": "Run State Solver"},
-        w="E.g. 5.60",
-        E_w="e.g. 0",
-        E_b="e.g. 0.23",
-        Me_w="e.g. 0.067 (GaAs)",
-        Me_b="e.g. 0.092 (AlGaAs)",
-        n=widgets.IntSlider(min=30, max=500, step=10, value=100),
-        bound=widgets.IntSlider(min=3, max=10, step=1, value=6),
+        w=widgets.Text("e.g. 5.60", continuous_update=False),
+        E_w=widgets.Text("e.g. 0", continuous_update=False),
+        E_b=widgets.Text("e.g. 0.23", continuous_update=False),
+        Me_w=widgets.Text("e.g. 0.067 (GaAs)", continuous_update=False),
+        Me_b=widgets.Text("e.g. 0.092 (AlGaAs)", continuous_update=False),
+        n=widgets.IntSlider(
+            min=30, max=500, step=10, value=100, continuous_update=False
+        ),
+        bound=widgets.IntSlider(
+            min=3, max=10, step=1, value=6, continuous_update=False
+        ),
     )
 
     return VBox((title_html, desc_html, qw_init))
@@ -133,10 +137,6 @@ Finite element calculation shows {len(self.e_lvl)} bounded electron states.
 """
         print("*" * 20)
         print(qw_desc)
-
-        # plot_box = interactive(self.plot, state=(0, len(self.e_lvl)-1), plot_scale=(1,10))
-
-        return self  # plot_box
 
     def get_fem_matrix(self):
         """
